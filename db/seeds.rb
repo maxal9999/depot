@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Product.delete_all
+Product.create!(title: 'Prog ruby',
+                description:
+                  %{<p>
+                    I want to program on Ruby
+                  </p>},
+                image_url: '54456668.jpg',
+                price: 300000.00
+)
+Product.create!(title: 'Horde',
+                description: %{<p> Horde is the best team in WOW </p>},
+                image_url: 'Horde.jpg',
+                price: 100000.00
+)
