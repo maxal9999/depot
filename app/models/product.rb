@@ -17,7 +17,7 @@ class Product < ApplicationRecord
 
   private
 
-  # проверка, что нет товарных позиций, ссылающихся на това
+  # проверка, что нет товарных позиций, ссылающихся на товар
   def ensure_not_referenced_by_any_line_item
     if line_items.empty?
       return true
